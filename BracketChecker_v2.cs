@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data;
 public static class BracketChecker
 {
-    // Uses a parameterized query, so user input is treated as data, never as SQL.
     public static IDataReader FindUser(IDbConnection connection, string username)
     {
         ArgumentNullException.ThrowIfNull(connection);

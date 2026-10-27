@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Data;
 public static class BracketChecker
 {
-    // INTENTIONALLY VULNERABLE (SQL injection): for learning/demo purposes only.
-    // User input is concatenated directly into the SQL string.
     public static IDataReader FindUser(IDbConnection connection, string username)
     {
         var command = connection.CreateCommand();
